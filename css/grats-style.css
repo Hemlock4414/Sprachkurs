@@ -1,0 +1,161 @@
+* {
+    margin: 0; 
+    padding:0;
+}
+
+body {
+    background: linear-gradient(to bottom left, #b9c847, #cd6413, #86a8e7);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(226, 235, 232);
+    justify-content: space-between;
+}
+
+#logoimg {
+    max-width: 200px; 
+    height: auto;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(226, 235, 232);
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+@media (min-width: 912px) {
+    .dropbtn {
+        font-size:28px;
+    }
+}
+
+.toptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toptextitem {
+    padding: 40px;    
+}
+
+.bigcontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.dis-con {
+    display: flex;
+    justify-content: center;
+}
+
+.disclaimer {    
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerleft {
+    color: white;
+    line-height: 2.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+#imgfooter {
+    max-width: 300px; 
+    height: auto;
+   
+}
+
+.footerright {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.symbols {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.4em
+}
+
+.symbolstext {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    line-height: 1.4em
+}
+
+.no-underline {
+    text-decoration: none;
+    color: white;
+}

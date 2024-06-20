@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form-2-style.css">
+    <title>Sprachkurs-Form-2</title>
+</head>
+<body>
+
+    <header>
+        <a href="home-index.html"><img src="img/logo-color.png" id="logoimg"></a>
+        
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <a href="form-1-index.html" button class="dropbtn">Sprachkurse</a>
+
+
+                <a href="form-1-index.html" button class="dropbtn">Niveau</a>
+
+                
+                <a href="form-1-index.html" button class="dropbtn">Standorte</a>
+
+
+                <a href="form-1-index.html" button class="dropbtn">Kursmodell</a>
+
+                <a href="form-1-index.html" button class="dropbtn">Anmeldung</a>                  
+            </div>
+        </div>      
+    </header>
+
+    <main>
+        <div class="toptext">  
+            <div class="toptextitem">  
+                <h1>Anmeldung Sprachkurs</h1>
+            </div>
+            <div class="toptextitem">
+                <h2>Hier können Sie sich gerne anmelden</h2>
+            </div>
+            <div class="toptextitem">
+                <h3>(Schritt 2) Kursinformationen:</h3>
+            </div>
+        </div>
+
+        <div class="bigcontainer">
+            <div class="container">
+                <form action="grats-index.html" method="get" id="kursForm">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lang">Sprache</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="lang" name="language">
+                                <option value="">Bitte wählen</option>
+                                <option value="Englisch">Englisch</option>
+                                <option value="Französich">Französich</option>
+                                <option value="Italienisch">Italienisch</option>
+                                <option value="Spanisch">Spanisch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="niveau">Niveau</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="niveau" name="niveau">
+                                <option value="">Bitte wählen</option>
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="B1-1">B1.1</option>
+                                <option value="B1-2">B1.2</option>
+                                <option value="B2-1">B2.1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">                       
+                        <div class="col-25">
+                            <label for="kbeginn">Kursbeginn</label>
+                        </div>
+                        <div class="col-75">
+        <!-- dynamisches min Attribut (JS), basierend auf dem aktuellen Datum -->
+         <!-- plus custom error message-->
+                            <input type="month" id="kbeginn" name="kursbeginn" required
+                            oninvalid="this.setCustomValidity('Bitte den Monat angeben, Kursbeginn ist jeweils am 1. des Monats')"
+                            oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="kort">Kursort</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="kort" name="kursort">
+                                <option value="">Bitte wählen</option>
+                                <option value="Basel">Basel</option>
+                                <option value="Chur">Chur</option>
+                                <option value="Luzern">Luzern</option>
+                                <option value="St. Gallen">St. Gallen</option>
+                                <option value="Zürich">Zürich</option>
+                            </select>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="kmodell">Kursmodell</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="kmodell" name="kursmodell">
+                                <option value="">Bitte wählen</option>
+                                <option value="Gruppenunterricht">Gruppenunterricht</option>
+                                <option value="Intensivkurs">Intensivkurs</option>
+                                <option value="Semi-Intensivkurs">Semi-Intensivkurs</option>
+                                <option value="Privatkurs">Privatkurs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                        <a href="form-2-index.html" class="button">Zurück</a>
+                        <button type="submit">Buchen</button>
+                    </div>    
+                </form>
+            </div> 
+
+            <div class="btns">
+
+            </div>
+        </div>    
+    </main>
+
+    <footer>    
+        <div class="footerleft">
+            <p>
+                Kontakt<br>
+                Blog<br>
+                <a href="form-1.html" class="no-underline">Anmeldeformular</a><br>
+                AGB<br>
+                Impressum<br>
+                Datenschutz
+            </p>
+        </div>
+
+        <div>
+            <img src="img/logo-white.png" id="imgfooter">
+        </div>
+
+        <div class="footerright">
+            <div class="symbols">
+                &#64;<br>
+                &#9742;<br>
+                &#9993;<br />
+                <br />
+                <br />
+                <img src="img/facebook-30.png" width="22px" height="22px">
+                <img src="img/linkedin-24.png" width="22px" height="22px">
+                <img src="img/instagram-24.png" width="22px" height="22px">
+            </div>
+            <div class="symbolstext">
+                <p>
+                    <a href="mailto:lingua@magica.ch" class="no-underline">lingua@magica.ch</a><br>
+                    <a href="tel:+41 44 412 69 96" class="no-underline">+41 44 412 69 96</a><br>
+                    Opportunity<br>
+                    Räffelstrasse 12<br>
+                    8045 Zurich<br>
+                    facebook<br>
+                    linkedIn<br>
+                    instagram
+                </p>
+            </div>
+        </div>            
+    </footer>
+    <script src='scripts/form-2.js'></script>
+</body>
+</html>

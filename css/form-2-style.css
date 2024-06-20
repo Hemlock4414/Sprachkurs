@@ -1,0 +1,211 @@
+* {
+    margin: 0; 
+    padding:0;
+}
+
+body {
+    background: linear-gradient(to bottom left, #b9c847, #cd6413, #86a8e7);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(226, 235, 232);
+    justify-content: space-between;
+}
+
+#logoimg {
+    max-width: 200px; 
+    height: auto;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(226, 235, 232);
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+@media (min-width: 912px) {
+    .dropbtn {
+        font-size:28px;
+    }
+}
+
+.toptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toptextitem {
+    padding: 40px;    
+}
+
+.bigcontainer {
+    display: flex;
+    flex-direction: column;        
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+form {
+    max-width: 900px;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+    gap: 30px; 
+}
+
+.button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: inline-start;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    float: inline-end;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+/* Responsive layout - when the screen is less than 
+767px wide, make the two columns stack on top of 
+each other instead of next to each other */
+@media screen and (max-width: 767px) {
+    .col-25, .col-75 {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerleft {
+    color: white;
+    line-height: 2.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+#imgfooter {
+    max-width: 300px; 
+    height: auto;
+   
+}
+
+.footerright {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.symbols {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.4em
+}
+
+.symbolstext {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    line-height: 1.4em
+}
+
+.no-underline {
+    text-decoration: none;
+    color: white;
+}

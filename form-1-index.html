@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form-1-style.css">
+    <title>Sprachkurs-Form-1</title>
+</head>
+<body>
+
+    <header>
+        <a href="home-index.html"><img src="img/logo-color.png" id="logoimg"></a>
+        
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <a href="form-1-index.html" button class="dropbtn">Sprachkurse</a>
+
+
+                <a href="form-1-index.html" button class="dropbtn">Niveau</a>
+
+                
+                <a href="form-1-index.html" button class="dropbtn">Standorte</a>
+
+
+                <a href="form-1-index.html" button class="dropbtn">Kursmodell</a>
+
+                <a href="form-1-index.html" button class="dropbtn">Anmeldung</a>                  
+            </div>
+        </div>      
+    </header>
+    
+    <main>
+        <div class="toptext">  
+            <div class="toptextitem">  
+                <h1>Anmeldung Sprachkurs</h1>
+            </div>
+            <div class="toptextitem">
+                <h2>Hier können Sie sich gerne anmelden</h2>
+            </div>
+            <div class="toptextitem">
+                <h3>(Schritt 1) Ihre Adressdaten:</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <form action="grats-index.html" method="get" id="personalienForm">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Vorname</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ihr Vorname ..." maxlength="50" required autofocus>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Nachname</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Ihr Nachname ..." maxlength="50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="street">Strasse</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="street" name="street" placeholder="Ihre Strasse ..." maxlength="50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="house">Hausnummer</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="house" name="house" placeholder="Ihre Hausnummer ..."><br />                        
+                        <span id="error-message-house"></span><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="plz">PLZ</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="plz" name="plz" placeholder="Ihre PLZ ..."><br />
+                        <span id="error-message-plz"></span><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="ort">Ort</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="ort" name="location" placeholder="Ihr Ort ..." maxlength="50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Telefonnummer</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="phone" name="phone" placeholder="Ihre Telefonnummer ...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">E-Mailadresse</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Ihre E-Mailadresse ...">
+                    </div>
+                </div>
+                <div class="row">
+                <a href="home-index.html" class="button">Zurück</a>   
+                <button type="submit">Weiter</button>
+                </div>
+            </form>
+        </div> 
+        
+        </div>
+
+
+    </main>
+
+        
+    <footer>    
+        <div class="footerleft">
+            <p>
+                Kontakt<br>
+                Blog<br>
+                <a href="form-1.html" class="no-underline">Anmeldeformular</a><br>
+                AGB<br>
+                Impressum<br>
+                Datenschutz
+            </p>
+        </div>
+
+        <div>
+            <img src="img/logo-white.png" id="imgfooter">
+        </div>
+
+        <div class="footerright">
+            <div class="symbols">
+                &#64;<br>
+                &#9742;<br>
+                &#9993;<br />
+                <br />
+                <br />
+                <img src="img/facebook-30.png" width="22px" height="22px">
+                <img src="img/linkedin-24.png" width="22px" height="22px">
+                <img src="img/instagram-24.png" width="22px" height="22px">
+            </div>
+            <div class="symbolstext">
+                <p>
+                    <a href="mailto:lingua@magica.ch" class="no-underline">lingua@magica.ch</a><br>
+                    <a href="tel:+41 44 412 69 96" class="no-underline">+41 44 412 69 96</a><br>
+                    Opportunity<br>
+                    Räffelstrasse 12<br>
+                    8045 Zurich<br>
+                    facebook<br>
+                    linkedIn<br>
+                    instagram
+                </p>
+            </div>
+        </div>            
+    </footer>
+
+    <script src='scripts/form-1.js'></script>
+</body>
+</html>
