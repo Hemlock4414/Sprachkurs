@@ -1,5 +1,10 @@
-//dynamisches min Attribut, basierend auf dem aktuellen Datum
 document.addEventListener('DOMContentLoaded', function() {
+        const lang = sessionStorage.getItem('lang');
+        // Setze den Kurs im Dropdown-Feld vorausgewählt
+                if (lang) {
+                        document.getElementById('lang').value = lang;
+                }
+        //dynamisches min Attribut, basierend auf dem aktuellen Datum
         const startMonthInput = document.getElementById('kbeginn');
 
         const currentDate = new Date();

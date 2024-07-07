@@ -1,0 +1,3 @@
+Die Vorlage in Figma ging diesmal viel leichter von der Hand. Auch dachte ich dass HTML und CSS kein Problem wären sodass ich etwas übermütig wurde und mit CSS bei mouseover ein Bild wechseln wollte. Das dauerte lange und es gab viele Fehlversuche bis es zum Glück endlich klappte.
+Dadurch hatte ich weniger Zeit für die Validierung der Eingaben die nicht komplett abgeschlossen werden konnte.
+Aber alles in allem finde ich war das Projekt gelungen und man konnte vieles vom gelernten anwenden was sogar ein bisschen Spass machte.

@@ -1,3 +1,15 @@
+//wird verwendet, um den Wert eines bestimmten URL-Parameters aus der aktuellen URL zu extrahieren
+function getParameterByName(lang) {
+    lang = lang.replace(/[\[\]]/g, '\\$&');
+    // Hole die aktuelle URL
+    let url = window.location.href;
+    let regex = new RegExp('[?&]' + lang + '(=([^&#]*)|&|#|$)');
+    let results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
 // Daten aus dem Formular auslesen
     document.getElementById('personalienForm').addEventListener('submit', function (event) {
     // Verhindert das Standardverhalten des Formulars           
@@ -11,6 +23,7 @@
     const ort = document.getElementById('ort').value;
     const tlfnr = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
+    const lang = getParameterByName('lang');
    // })
 
 
@@ -68,6 +81,7 @@ myValidation();
         sessionStorage.setItem('ort', ort);
         sessionStorage.setItem('phone', tlfnr);
         sessionStorage.setItem('email', email);
+        sessionStorage.setItem('lang', lang);
 
 // Weiterleitung zur nächsten Seite        
         window.location.href = 'form-2-index.html';

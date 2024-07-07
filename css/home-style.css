@@ -95,6 +95,7 @@ header {
 #image1 {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .maintitle {
@@ -180,6 +181,7 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .courses-block {
