@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const monat = document.getElementById('kbeginn').value;
         const standort = document.getElementById('kort').value;
         const modell = document.getElementById('kmodell').value;
-
+console.log(sprache);
 // Verhindert das Speichern und Weiterleitung, wenn keine Auswahl getroffen wurde
 if (sprache === "") {
         alert("Bitte eine Sprache auswählen.");
